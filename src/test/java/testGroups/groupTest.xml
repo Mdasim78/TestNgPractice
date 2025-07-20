@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <test name="PartialGroupTest">
+	<groups>
+		<run>
+			<include name="DemoTestClass"></include> <!-- includes all the methods from class with group name DemoTestClass -->
+			<exclude name="group1"></exclude>  <!-- excluded from execution-->
+		</run>
+	</groups>
+	<classes>
+		<class name="testGroups.PartialGroupsExample"></class>
+	</classes>
+ </test>
+</suite> <!-- Suite -->

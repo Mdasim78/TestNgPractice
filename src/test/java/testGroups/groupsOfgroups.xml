@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <groups>
+		<define name="myGroup1">
+			<include name="group1"></include> 			<!--we can't' exclude from any defined subgroup-->
+		</define>
+		<define name="myGroup2">
+			<include name="group2"></include> <!--we can't' exclude from any defined subgroup-->
+		</define>
+		<run>
+			<include name="myGroup2"></include>
+		</run>
+	</groups>
+	
+	<classes>
+		<class name="testGroups.GroupsOfGroups"></class> <!-- we can run entire class--> 
+		<class name="testGroups.GroupsOfGroups">  <!-- oe we can run include/exclude individual methods-->
+			<methods>
+				<exclude name="group2"></exclude>
+			</methods>
+		</class>
+	</classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

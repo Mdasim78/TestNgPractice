@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [paramtersDemo]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="paramsAnnotationExample(failed)">
+    <parameter name="param3" value="Infy"/>
+    <parameter name="param4" value="BBSR"/>
+    <parameter name="param1" value="hello"/>
+    <parameter name="param2" value="world"/>
+    <classes>
+      <class name="ParametersInTestNg.ParamsExample">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testMethod1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- ParametersInTestNg.ParamsExample -->
+    </classes>
+  </test> <!-- paramsAnnotationExample(failed) -->
+</suite> <!-- Failed suite [paramtersDemo] -->

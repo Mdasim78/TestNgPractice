@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestWithFactory">
+	<test name="TestWithFactoryDemo">
+		<classes>
+			<class name="Factories.TestWithFactory"></class> 
+			<!-- here we can't' keep the class where test annotation is present 
+			×××× <class name="Factories.WebTest"></class> ×××× wrong
+			instead we need to keep  factory class will work as it creates object for test class-->
+		</classes>
+	</test>
+</suite>

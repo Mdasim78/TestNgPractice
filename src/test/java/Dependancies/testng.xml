@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	<groups>
+		<dependencies>
+			<group name="GroupDependancyInXml1" depends-on="GroupDependancyInXml2"></group>
+			<!-- here GroupDependancyInXml1 depends on GroupDependancyInXml2. so it will run later -->
+		</dependencies>
+	</groups>
+    <classes>
+		<class name="Dependancies.GroupDependanciesInTestNgXml"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

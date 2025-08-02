@@ -16,7 +16,7 @@
 	
 	<classes>
 		<class name="testGroups.GroupsOfGroups"></class> <!-- we can run entire class--> 
-		<class name="testGroups.GroupsOfGroups">  <!-- oe we can run include/exclude individual methods-->
+		<class name="testGroups.GroupsOfGroups">  <!-- or we can run include/exclude individual methods-->
 			<methods>
 				<exclude name="group2"></exclude>
 			</methods>

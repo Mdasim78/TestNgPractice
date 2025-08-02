@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ListnersExamples">
+  <test thread-count="5" name="TestNgExecutionListener">
+    <classes>
+      <class name="Listeners.Test_DisableListnerInAclass"/>
+      <class name="Listeners.MyIExecutionListener_Test"></class>
+      <class name="Listeners.MyIInvokedMethodListener_Test"></class>
+      <class name="Listeners.MyISuiteListener_Test"></class>
+    </classes>
+  </test> <!-- TestNgExecutionListener -->
+</suite> <!-- ListnersExamples -->

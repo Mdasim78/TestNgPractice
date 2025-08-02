@@ -2,6 +2,8 @@ package Dependancies;
 
 import org.testng.annotations.Test;
 
+//we can set dependancy in testNg xml only for group dependancy
+
 public class GroupDependanciesInTestNgXml {
 	
 	@Test(groups = "GroupDependancyInXml1")

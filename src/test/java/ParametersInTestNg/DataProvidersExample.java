@@ -24,7 +24,7 @@ public class DataProvidersExample {
 	}
 	
 	//if dataprovider method is in different class then we need to write--> (dataProviderClass = className.class)
-	@Test(dataProvider = "personalData") 
+	@Test(dataProvider = "personalData",dataProviderClass = DataProvidersExample.class) 
 	public void getPersonalInfo(String name, String role, float experience) {
 		System.out.println(name+" has "+experience+" years of experience in "+role);
 	}
